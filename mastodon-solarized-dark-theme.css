@@ -1,0 +1,489 @@
+/*
+Mastodon Solarized Dark Theme
+version: 1.0
+*/
+
+
+/* Colour Palette */
+:root {
+    --color-accent: #ca8f04;
+    --color-accent-faded: #b17d04;
+    --color-accent-focus: rgba(202, 143, 4, .75);
+    --color-background: #073642;
+    --color-border: #586e75;
+    --color-dark: #313543;
+    --color-form: #17191f;
+    --color-glow: rgb(252, 187, 33);
+    --color-grey: #282c37;
+    --color-hash: #b58900;
+    --color-panel: #f7f9fa;
+    --color-white-fade: #8fa0b9;
+    --color-dark-text: #8991a9;
+    --color-verified: #859900;
+    --color-white: #fdf6e3;
+}
+
+
+/* Hiding things */
+.about__footer,
+.about__header h1, .about__header p,
+.about__meta,
+.about__section__title,
+.app-body .ui__header__links .button.button,
+.app-body .ui__header__links .button.button-tertiary,
+.detailed-status__action-bar [aria-label="Bookmark"],
+.getting-started__trends,
+.layout-single-column .ui__header__logo,
+.layout-single-column .column-link.column-link--logo,
+.link-footer,
+.logo-container,
+.media-gallery__gifv__label, /* Hide alt-text badge on images */
+.navigation-panel hr,
+.navigation-panel__legal > hr,
+.navigation-panel > .column-link:only-of-type,
+.navigation-panel [title="Bookmarks"],
+.navigation-panel [title="Favourites"],
+.navigation-panel [title="Lists"],
+.no-list > li:first-child,
+.server-banner,
+.server-banner__hero,
+.server-banner__introduction,
+.server-banner__meta,
+.sign-in-banner,
+.status__action-bar [aria-label="Bookmark"] {
+    display: none;
+}
+
+
+/* Background */
+html,
+body,
+body.admin,
+body.lighter,
+.account__section-headline,
+.admin-wrapper .sidebar-wrapper__inner,
+.explore__search-results,
+.explore__search-results .account,
+.explore__search-results .trends__item
+.search-results__section__header,
+.search-results__section .account,
+.search-results__section .trends__item,
+.tabs-bar__wrapper {
+    background-color: var(--color-background);
+}
+.column > .scrollable,
+.detailed-status,
+.detailed-status__wrapper-direct .detailed-status,
+.detailed-status__wrapper-direct .detailed-status__action-bar,
+.empty-column-indicator,
+.notification__filter-bar,
+.scrollable .account-card {
+	background: var(--color-background);
+}
+.status,
+.scrollable > div:first-child .detailed-status,
+.scrollable > .detailed-status__action-bar:focus,
+.focusable:focus .detailed-status,
+.focusable:focus .detailed-status__action-bar {
+	background: var(--color-background);
+}
+
+
+/* Solarized white */
+body,
+.account__header__extra__links a strong,
+.account__header__bio .account__header__content,
+.account__header__bio .account__header__fields dt,
+.account__header__bio .account__header__fields .verified dt,
+.account__header__tabs__name h1,
+.account__section-headline a.active,
+.account__section-headline button.active,
+.app-body .status-card:active .status-card__host,
+.app-body .status-card:focus .status-card__host,
+.app-body .status-card:hover .status-card__host,
+.app-body .status-card:active .status-card__author,
+.app-body .status-card:active .status-card__description,
+.app-body .status-card:active .status-card__title,
+.app-body .status-card:focus .status-card__author,
+.app-body .status-card:focus .status-card__description,
+.app-body .status-card:focus .status-card__title,
+.app-body .status-card:hover .status-card__author,
+.app-body .status-card:hover .status-card__description,
+.app-body .status-card:hover .status-card__title,
+.column-link,
+.column-link--transparent,
+.form-footer a,
+.navigation-bar,
+.navigation-bar strong,
+.prose h2,
+.simple_form .lead,
+.simple_form .input.with_label .label_input > label,
+.status-card,
+.status__content,
+.status__display-name .display-name strong,
+.language-dropdown__dropdown__results__item:hover {
+	color: var(--color-white);
+}
+
+
+/* Custom About page */
+.about__section__body {
+    border: 0 !important;
+    padding-bottom: 3em;
+}
+.prose {
+    text-align: center;
+    font-size: 24px;
+	color: var(--color-white);
+}
+.prose a {
+    text-decoration: none;
+}
+.prose a:hover {
+    text-decoration: underline;
+}
+.prose-small {
+    font-size: 14px;
+}
+p.prose-emoji {
+	font-size: 65px;
+	margin-top: 30px;
+}
+
+/* Compose box */
+.layout-single-column .compose-form .autosuggest-textarea__textarea {
+    font-size: 15px;
+    min-height: 250px;
+}
+.compose-form .compose-form__modifiers,
+.compose-form .autosuggest-textarea__textarea {
+	background: var(--color-white);
+}
+
+/* Wider Timeline Column */
+@media screen and (min-width: 1300px) {
+  .columns-area__panels__main {
+    max-width: 720px;
+    }
+}
+
+
+/* Profiles */
+.account__header__bio .account__header__fields .verified a,
+.account__header__fields .verified__mark {
+    color: var(--color-verified);
+}
+.account__header__bio .account__header__fields .verified,
+.account__header__bio .account__header__fields,
+.account__header__fields dl {
+    border: 1px solid;
+    border-color: var(--color-border);
+    background: none;
+}
+
+
+/* Load More */
+.load-more:focus,
+.load-more:hover {
+    background-color: var(--color-background);
+}
+
+
+/* New Post Timeline Glow */
+.column-header__wrapper.active:before {
+    background: radial-gradient(ellipse, var(--color-glow), rgba(250, 5, 5, 0) 70%);
+    opacity: 50%;
+}
+
+
+/* Borders */
+.button.button-secondary {
+	border: none;
+}
+.column-back-button,
+.column-header,
+.compose-form__poll-wrapper .button.button-secondary,
+.compose-panel .reply-indicator,
+.navigation-panel hr,
+.status-card,
+.compose-form .compose-form__autosuggest-wrapper {
+    border-color: var(--color-border);
+}
+.account,
+.account__section-headline,
+.column-header__collapsible,
+.conversation,
+.follow_requests-unlocked_explanation,
+.load-gap,
+.status,
+.trends__item {
+    border-bottom-color: var(--color-border);
+}
+.column-header__collapsible-inner {
+    border-color: var(--color-border);
+    border-right: none;
+    border-left: none;
+}
+.about__section__body,
+.column > .scrollable,
+.column > .scrollable.about {
+    border: none;
+}
+.detailed-status {
+    border-top-color: var(--color-border);
+}
+.detailed-status__action-bar {
+    border-top-color: var(--color-border);
+    border-bottom-color: var(--color-border);
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-border)
+}
+.notification__filter-bar {
+    border-right: none;
+    border-bottom-color: var(--color-border);
+    border-left: none;
+}
+.status__line {
+  border-inline-start: 2px solid var(--color-border);
+}
+.scrollable .account-card {
+    border-bottom: 1px solid var(--color-border);
+}
+.notification.unread::before, .status__wrapper.unread::before {
+  border-inline-start: 1px solid var(--color-grey);
+}
+.copypaste input {
+    border-color: var(--color-accent);
+}
+
+@media screen and (max-width: 1174px) {
+  .column-header {
+    border-right-color: var(--color-background) !important;
+  }
+
+  .navigation-panel hr {
+    border-color: var(--color-background) !important;
+  }
+
+  .layout-single-column .ui__header {
+    border-bottom-color: var(--color-background);
+    background: var(--color-background);
+  }
+  
+  .columns-area__panels__pane--navigational .navigation-panel {
+    background: var(--color-background);
+  }
+
+  .column-header {
+    border-right-color: var(--color-background);
+  }
+
+  .columns-area__panels__pane--navigational .navigation-panel {
+    border-inline-start: 1px solid var(--color-background);
+  }
+}
+
+
+/* Colours */
+.loading-bar,
+.poll__chart.leading {
+    background-color: var(--color-accent);
+}
+.account-card__bio a,
+.poll__chart,
+.reply-indicator__content a,
+.status__content a.mention,
+.status__content a,
+.text-icon-button.active {
+    color: var(--color-accent);
+}
+.account__header__content a,
+.hashtag-bar a,
+.status__content a.hashtag {
+    color: var(--color-hash);
+}
+.simple_form input[type="email"],
+.simple_form input[type="password"],
+.simple_form input[type="text"],
+.simple_form input[type="url"],
+.simple_form select,
+.simple_form textarea {
+    border-color: var(--color-border);
+    background: var(--color-form);
+}
+.column-header,
+.column-header__button,
+.column-header__button.active,
+.follow_requests-unlocked_explanation {
+    background: var(--color-grey);
+}
+.column-header.active .column-header__icon {
+    text-shadow: none;
+    color: var(--color-accent);
+}
+.notification__message .fa,
+.notification__favourite-icon-wrapper .star-icon {
+    color: var(--color-accent-faded);
+}
+.muted .poll__chart.leading {
+    background: var(--color-accent-faded);
+}
+.about__section__title,
+.interaction-modal__icon,
+.prose a,
+.column-back-button,
+.column-header > .column-header__back-button,
+.column-header__back-button,
+.account__header__fields a,
+.account__header__bio .account__header__fields a,
+.button.button-tertiary,
+.follow_requests-unlocked_explanation a,
+.reply-indicator__content a.unhandled-link,
+.search-results__section__header button,
+.status__content a.unhandled-link,
+.status__content__read-more-button,
+.timeline-hint a,
+.timeline-hint a:active,
+.timeline-hint a:focus {
+    color: var(--color-accent);
+}
+.timeline-hint a:hover,
+.follow_requests-unlocked_explanation a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+.column-link--transparent.active {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+.follow_requests-unlocked_explanation,
+.muted .status__content p {
+	color: var(--color-dark-text);
+}
+.compose-form__poll-wrapper .button.button-secondary {
+	color: var(--color-white);
+}
+.compose-form__poll-wrapper .button.button-secondary:hover,
+.compose-form__poll-wrapper .button.button-secondary:active,
+.compose-form__poll-wrapper .button.button-secondary:focus {
+	background-color: var(--color-accent-faded);
+}
+/* Trending Hashtags Graph */
+.trends__item__sparkline path:last-child {
+    stroke: var(--color-accent) !important;
+}
+.trends__item__sparkline path:first-child {
+    fill: var(--color-accent) !important;
+    opacity: 20%;
+}
+
+
+/* Status Card */
+.status-card__host,
+.status-card__author {
+	font-size: 13px;
+}
+.status-card__title {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: normal;
+}
+.status-card__author strong {
+    font-weight: 200;
+}
+/* Status Action Bar */
+.status__action-bar {
+    justify-content: end;
+}
+/* Detailed status */
+.detailed-status__button,
+.detailed-status__action-bar-dropdown {
+	flex: 0 1 auto;
+}
+.detailed-status__action-bar {
+	gap: 18px;
+	justify-content: end;
+}
+
+
+/* Inputs */
+.search__input::placeholder {
+	color: var(--color-white-fade);
+}
+.search__input {
+    background-color: var(--color-grey);
+    border-color: var(--color-border);
+    color: #9baec8;
+}
+.search__input:focus,
+.search__input:hover {
+    background-color: var(--color-grey);
+    border-color: var(--color-border);
+}
+.search__input:active {
+    transition: none;
+}
+.search__popout {
+    border: 1px solid var(--color-border);
+    box-shadow: none;
+    background-color: var(--color-dark);
+}
+.dropdown-menu__item a:active,
+.dropdown-menu__item a:focus,
+.dropdown-menu__item a:hover,
+.dropdown-menu__item button:active,
+.dropdown-menu__item button:focus,
+.dropdown-menu__item button:hover {
+    background: var(--color-grey);
+    color: var(--color-white);
+    outline: 0;
+}
+
+
+/* Buttons, drop-down menus and links */
+.app-body .button {
+    background-color: var(--color-accent);
+    color: var(--color-panel);
+}
+.account__section-headline a.active::before,
+.account__section-headline button.active::before,
+.admin-wrapper .content__heading__tabs a.selected,
+.notification__filter-bar button.active::before {
+    background: var(--color-accent) !important;
+}
+.language-dropdown__dropdown__results__item:hover,
+.language-dropdown__dropdown__results__item.active,
+.search__popout__menu__item.selected,
+.search__popout__menu__item:hover,
+.privacy-dropdown__option.active,
+.privacy-dropdown__option.active:hover,
+.privacy-dropdown__option:hover {
+    background: var(--color-grey) !important;
+}
+.button,
+.simple_form button,
+.simple_form .button,
+.simple_form .block-button {
+    color: var(--color-white);
+    background: var(--color-accent);
+    border: 0 none;
+}
+.button:active,
+.button:focus,
+.button:hover,
+.app-body .button:active,
+.app-body .button:focus,
+.app-body .button:hover,
+.simple_form button:active,
+.simple_form button:focus,
+.simple_form button:hover,
+.simple_form .button:active,
+.simple_form .button:focus,
+.simple_form .button:hover,
+.simple_form .block-button:active,
+.simple_form .block-button:focus,
+.simple_form .block-button:hover {
+    background-color: var(--color-accent-focus);
+	color: var(--color-white);
+}
