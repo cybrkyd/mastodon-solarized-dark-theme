@@ -113,6 +113,7 @@ body,
 .column-link,
 .column-link--transparent,
 .form-footer a,
+.language-dropdown__dropdown__results__item:hover,
 .navigation-bar,
 .navigation-bar strong,
 .prose h2,
@@ -121,7 +122,18 @@ body,
 .status-card,
 .status__content,
 .status__display-name .display-name strong,
-.language-dropdown__dropdown__results__item:hover {
+.story__details__publisher,
+.story__details__title,
+.story__details__shared,
+.story:hover .story__details__publisher,
+.story:active .story__details__publisher,
+.story:focus .story__details__publisher,
+.story:hover .story__details__title,
+.story:active .story__details__title,
+.story:focus .story__details__title,
+.story:hover .story__details__shared,
+.story:active .story__details__shared,
+.story:focus .story__details__shared {
 	color: var(--color-white);
 }
 
@@ -255,6 +267,9 @@ p.prose-emoji {
 }
 .copypaste input {
     border-color: var(--color-accent);
+}
+.story {
+	border-bottom: 1px solid var(--color-border);
 }
 
 @media screen and (max-width: 1174px) {
