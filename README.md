@@ -8,7 +8,7 @@ A beautiful, solarized dark theme for Mastodon Web UI. In ~500 lines of CSS.
 
 This theme has only been tested with the Mastodon (Dark) system theme; it probably will not look so cool if run on Mastodon (Light).
 
-<mark>UPDATE: This repo will no longer receive any updates. My Mastodon instance crashed and burned so I no longer use Mastodon.</mark>
+**UPDATE: This repo will no longer receive any updates. My Mastodon instance crashed and burned so I no longer use Mastodon.**
 
 ### Home Page
 
